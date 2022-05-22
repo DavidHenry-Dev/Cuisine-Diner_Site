@@ -1,0 +1,297 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+   clear: both;
+}
+
+body {
+    margin: auto 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+li, a {
+    text-decoration: none;
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+}
+/* Header and Nav */
+
+nav {
+   display: flex;
+   justify-content: space-between;
+   height:40px;
+}
+
+nav img {
+    height: 60px;
+    padding-left:5%;
+}
+
+nav ul {
+   display: flex;
+   justify-content: space-around;
+   flex-basis: 65%;
+}
+
+nav a {
+    color: black;
+    font-weight: 600;
+}
+
+nav i {
+    font-size: 20px;
+}
+
+/* Main - First Section */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 600px;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    text-align: left;
+    margin: 0 auto;
+    row-gap: 30px;
+}
+
+.welcome h1 {
+    font-size: 60px;
+}
+
+.welcome ul {
+    display: flex;
+    gap: 40px;
+}
+
+
+.welcome input {
+    width: 50%;
+    height: 35px;
+    border: .5px solid lightgray;
+    padding-left: 20px;
+    -webkit-box-shadow: 0 6px 6px -6px rgba(0, 0, 0, 0.288);
+       -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.288);
+            box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.288);
+}
+
+.welcome button {
+    width: 85px;
+    height: 35px;
+    background: #EC8C31;
+    border: none;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    -webkit-box-shadow: 0 6px 6px -6px rgba(0, 0, 0, 0.288);
+    -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.288);
+         box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.288);
+}
+
+.welcome i {
+    color: #EC8C31;
+}
+main img { 
+   height: 600px;
+}
+
+/* About - Second section */
+
+.aboutSect {
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+    align-items: center;
+}
+
+.aboutSect img {
+    height: 600px;
+}
+
+.aboutInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 65%;
+    height: 600px;
+    background-image: url("/css/images/oats.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+
+}
+
+.aboutInfo span {
+    font-size: 18px;
+    color:#EC8C31;
+}
+
+.aboutInfo h2 {
+    font-size: 35px;
+    margin: 10px 0 30px 0;
+}
+
+.aboutInfo p {
+    width: 70%;
+    line-height: 1.5;
+}
+
+.aboutInfo button {
+    background: #EC8C31;
+    color: white;
+    border: none;
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.aboutInfo i {
+    padding-left: 10px;
+}
+/* Cuisine - Third section */
+
+.cuisineSect {
+    display: flex;
+    height: 800px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: #F1F4F7;
+    
+}
+
+
+.cuisineSect span {
+    color: #EC8C31;
+    font-weight: 600;
+}
+
+.cuisineSect h1 {
+  font-size: 50px;
+  margin: 10px 0 50px;
+}
+
+
+.cuisineSect ul {
+    column-gap: 20px;
+    margin: 0 0 20px 0;
+    display: flex;
+    flex-basis: 10%;
+    margin: 0;
+    padding: 0;
+}
+
+.cuisineSect ul img {
+    height:180px;
+    width:150px;
+}
+
+.dots {
+    margin-top: 20px;
+}
+
+
+/* Hours - Fourth Section */
+
+.hoursSect {
+    display: flex;
+    height: 900px;
+    flex-direction: column;       
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.hourSect:first-of-type(span) {
+    margin-top:20px;
+}
+
+.orange {
+    color:#EC8C31;
+    font-weight: 600;
+}
+
+.hoursSect h1 {
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.hoursSect i {
+    color: #EC8C31;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.callNow {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.phoneNum {
+    font-size: 30px;
+}
+
+.hoursSect div {
+    font-weight: 600;
+}
+
+.hoursSect img {
+    height: 500px;
+    width: 800px;
+}
+/* Review - reviewSect */
+
+.reviewSect {
+    display: flex;
+    height: 500px; 
+    padding: 5%;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;          
+}
+
+.reviewSect span:first-of-type {
+    color: #EC8C31;
+    font-weight: 600;;
+}
+
+.reviewSect span:nth-of-type(2) {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.reviewSect span:nth-of-type(3) {
+    font-weight: 600;
+    color:rgba(0, 0, 0, 0.288);
+}
+
+.reviewSect h1 {
+    font-size: 40px;
+    margin: 10px 0 20px 0;
+}
+
+.reviewSect p {
+    font-size: 15px;
+    line-height: 2;
+    color:rgba(0, 0, 0, 0.8);
+}
